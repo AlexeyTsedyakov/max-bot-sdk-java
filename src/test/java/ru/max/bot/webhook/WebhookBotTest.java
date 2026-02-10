@@ -51,7 +51,7 @@ public class WebhookBotTest {
         container = spy(new JettyWebhookBotContainer("0.0.0.0", 12345));
         bot = new TestBot(client, "testbot");
         bot2 = new TestBot(client, "testbot2");
-        httpClient = new OkHttpTransportClient();
+        httpClient = new OkHttpTransportClient("testToken");
         serializer = new JacksonSerializer();
         when(client.getSerializer()).thenReturn(serializer);
 
