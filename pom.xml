@@ -64,6 +64,14 @@
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/dev.mccue/guava-concurrent -->
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>guava-concurrent</artifactId>
+            <version>33.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+
 
         <!-- For tests -->
         <dependency>
