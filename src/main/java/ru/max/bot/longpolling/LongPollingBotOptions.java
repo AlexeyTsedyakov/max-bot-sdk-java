@@ -8,7 +8,7 @@ import dev.mccue.guava.concurrent.RateLimiter;
 import ru.max.bot.MaxBotOptions;
 
 public class LongPollingBotOptions extends MaxBotOptions {
-    public static final LongPollingBotOptions DEFAULT = new LongPollingBotOptions(30, null, null, true, 2.0);
+    public static final LongPollingBotOptions DEFAULT = new LongPollingBotOptions(30, 100, null, true, 2.0);
 
     private final int requestTimeout;
     private final Integer limit;

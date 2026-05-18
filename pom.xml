@@ -5,7 +5,7 @@
 
     <groupId>ru.max</groupId>
     <artifactId>max-bot-sdk</artifactId>
-    <version>0.0.6-SNAPSHOT-MOD-0.2</version>
+    <version>0.0.6-SNAPSHOT-MOD-0.3</version>
 
     <name>Max Java Bot SDK</name>
     <inceptionYear>2025</inceptionYear>
