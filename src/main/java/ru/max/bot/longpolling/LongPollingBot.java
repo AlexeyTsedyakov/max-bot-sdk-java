@@ -104,6 +104,7 @@ public class  LongPollingBot extends MaxBotBase implements MaxBot {
         while (true) {
             UpdateList updateList;
             try {
+                options.getRateLimiter().acquire();
                 updateList = pollOnce(marker);
                 error = 0;
             } catch (APIException | ClientException e) {

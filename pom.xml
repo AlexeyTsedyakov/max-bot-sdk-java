@@ -5,7 +5,7 @@
 
     <groupId>ru.max</groupId>
     <artifactId>max-bot-sdk</artifactId>
-    <version>0.0.6-SNAPSHOT-MOD-0.2</version>
+    <version>0.0.6-SNAPSHOT-MOD-0.3</version>
 
     <name>Max Java Bot SDK</name>
     <inceptionYear>2025</inceptionYear>
@@ -64,6 +64,14 @@
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/dev.mccue/guava-concurrent -->
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>guava-concurrent</artifactId>
+            <version>33.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+
 
         <!-- For tests -->
         <dependency>
