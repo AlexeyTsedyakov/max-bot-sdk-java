@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.max</groupId>
     <artifactId>max-bot-sdk</artifactId>
-    <version>0.0.6-SNAPSHOT-MOD-0.3</version>
+    <version>0.0.6-SNAPSHOT-MOD-0.4</version>
 
     <name>Max Java Bot SDK</name>
     <inceptionYear>2025</inceptionYear>
@@ -42,7 +43,7 @@
         <dependency>
             <groupId>ru.max</groupId>
             <artifactId>max-bot-api</artifactId>
-            <version>0.0.6-SNAPSHOT-MOD-0.2</version>
+            <version>0.0.6-SNAPSHOT-MOD-0.3</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -163,16 +164,16 @@
                     </execution>
                 </executions>
             </plugin>
-<!--
-            <plugin>
-                <groupId>org.eluder.coveralls</groupId>
-                <artifactId>coveralls-maven-plugin</artifactId>
-                <version>4.3.0</version>
-                <configuration>
-                    <repoToken>${coveralls.token}</repoToken>
-                </configuration>
-            </plugin>
--->
+            <!--
+                        <plugin>
+                            <groupId>org.eluder.coveralls</groupId>
+                            <artifactId>coveralls-maven-plugin</artifactId>
+                            <version>4.3.0</version>
+                            <configuration>
+                                <repoToken>${coveralls.token}</repoToken>
+                            </configuration>
+                        </plugin>
+            -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -234,23 +235,18 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <repository>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Repository</name>
+            <url>http://repo:8080/releases</url>
+        </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>ossrh</id>
-            <name>Sonatype OSSRH</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Repository</name>
+            <url>http://repo:8080/releases</url>
         </repository>
     </repositories>
 </project>
