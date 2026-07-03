@@ -34,7 +34,7 @@
         <dependency>
             <groupId>ru.max</groupId>
             <artifactId>max-bot-sdk</artifactId>
-            <version>0.0.6-SNAPSHOT-MOD-0.4</version>
+            <version>0.0.6-SNAPSHOT-MOD-0.5</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
